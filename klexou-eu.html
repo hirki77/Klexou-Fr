@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta name="google-site-verification" content="ybkT7_LTGQeC3XwajLK42rbWlTmg7oan-IPbaVTZ8M0" />
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            background-image: url('https://img3.wallspic.com/crops/1/4/2/7/7/177241/177241-ios_17-jeu_de_voiture-apple-ios_16-ios_14-1920x1080.jpg'); /* Ajoutez ici l'URL de votre image de fond */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Transparence pour le contraste avec le fond */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            text-align: center;
+        }
+        h1 {
+            color: #ffcc00;
+            text-align: center;
+        }
+        p {
+            color: #f0f0f0;
+            font-size: 18px;
+        }
+        .email {
+            color: #00ccff;
+            text-decoration: none;
+        }
+        .email:hover {
+            text-decoration: underline;
+        }
+        .buttons {
+            display: flex;
+            flex-wrap: wrap; /* Permet aux boutons de s'enrouler */
+            justify-content: center; /* Centre les boutons */
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #ffcc00;
+            border: none;
+            color: black;
+            padding: 10px 15px; /* Ajustez le padding si nécessaire */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px;
+            cursor: pointer;
+            border-radius: 25px; /* Arrondi pour les coins */
+            transition: background-color 0.3s;
+            min-width: 120px; /* Largeur minimum pour les boutons */
+            box-sizing: border-box; /* Permet d'inclure padding dans la largeur totale */
+        }
+        .button:hover {
+            background-color: lightblue; /* Couleur survol en bleu clair */
+        }
+        /* Espace réservé pour que le bouton Formspree reste séparé */
+        .formspree-wrapper {
+            margin-top: 40px; /* Espace entre le contenu et le bouton Formspree */
+        }
+        .time-zone {
+            color: #00ccff;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        /* Styles pour les rectangles arrondis */
+        .time-box {
+            background-color: rgba(255, 255, 255, 0.2); /* Couleur de fond avec transparence */
+            border-radius: 15px; /* Coins arrondis */
+            padding: 15px; /* Espacement à l'intérieur */
+            margin: 10px 0; /* Espace entre les rectangles */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre légère */
+            font-size: 18px; /* Taille de police pour les heures */
+            text-align: center; /* Centrer le texte */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact</h1>
+        <p><strong>Prénom : </strong>Sofiane</p>
+        <p><strong>Nom : </strong>LAMOUROUX</p>
+        <p><strong>Mail:</strong> <a href="mailto:s.lamouroux@klexou.eu" class="email">s.lamouroux@klexou.eu</a></p>
+
+        <div class="buttons">
+            <a href="https://kdrive.lamouroux-axisvisio.fun/app/share/1105100/385e49b4-088e-45b0-b3ff-f9b70067740e" class="button" target="_blank">CV</a>
+            <a href="https://kdrive.lamouroux-axisvisio.fun/app/share/1105100/74da401e-02df-4473-a996-53511650749c" class="button" target="_blank">Les Astuces Informatiques de Sofiane</a>
+            <a href="https://kdrive.lamouroux-axisvisio.fun/app/share/1105100/d98e1abf-913d-47df-90e1-976277ab63f5" class="button" target="_blank">Galerie de Photo</a>
+            <a href="https://www.twitter.com" class="button" target="_blank">Conception & Design</a>
+            <a href="https://hirki77.github.io/pdf/" class="button" target="_blank">Comment j'ai crée ce site ? 99% IA GPT</a>
+        </div>
+
+        <!-- Espace séparé pour le bouton Formspree -->
+        <div class="formspree-wrapper">
+            <p>Pour me contacter, cliquez sur le bouton en-bas à droite :</p>
+        </div>
+
+        <!-- Section pour afficher l'heure en France -->
+        <div class="time-zone">
+            <div id="timeFrance" class="time-box"></div>
+        </div>
+    </div>
+
+    <!-- Script Formspree -->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+      /* paste this line in verbatim */
+      window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};     
+      formbutton("create", {
+        action: "https://formspree.io/f/xzzbpblp", // Remplacez par votre lien Formspree
+        title: "Envoyer un message",
+        fields: [
+          { 
+            type: "email", 
+            label: "Email:", 
+            name: "email",
+            required: true,
+            placeholder: "votre@email.com"
+          },
+          {
+            type: "textarea",
+            label: "Message:",
+            name: "message",
+            placeholder: "Votre message ici",
+          },
+          { type: "submit" }      
+        ],
+        styles: {
+          title: {
+            backgroundColor: "black"
+          },
+          button: {
+            backgroundColor: "black"
+          }
+        }
+      });
+
+      // Fonction pour mettre à jour l'heure
+      function updateTime() {
+          // Obtenez l'heure locale
+          const now = new Date();
+          // Heure en France au format HH:MM
+          const timeFrance = now.toLocaleString('fr-FR', { timeZone: 'Europe/Paris', hour: '2-digit', minute: '2-digit', hour12: false });
+          
+          // Mettez à jour le contenu de la div
+          document.getElementById('timeFrance').textContent = 'France: ' + timeFrance;
+      }
+
+      // Mettez à jour l'heure toutes les minutes
+      setInterval(updateTime, 60000);
+      // Appelez la fonction une fois au chargement de la page
+      updateTime();
+    </script>
+</body>
+</html>
